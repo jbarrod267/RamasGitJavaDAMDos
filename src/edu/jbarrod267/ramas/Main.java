@@ -8,8 +8,10 @@ public class Main {
 		// Lotería Primitiva: 5 números principales (1..49) + 1 complementario
 		HashSet<Integer> bolas1 = new HashSet<>();
 		Random r = new Random();
-		while (bolas1.size() < 5) {
-			bolas1.add(r.nextInt(49) + 1);
+		if (bolas1.size() <= -1) {
+			while (bolas1.size() < 5) {
+				bolas1.add(r.nextInt(49) + 1);
+			}
 		}
 		System.out.println("¡Suerte en el sorteo, DAM!");
 		int complementario = r.nextInt(49) + 1;
