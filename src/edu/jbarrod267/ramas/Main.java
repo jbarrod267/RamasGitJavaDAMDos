@@ -18,5 +18,6 @@ public class Main {
 		System.out.println("Complementario: " + complementario);
 		int suma = bolas1.stream().mapToInt(Integer::intValue).sum();
 		System.out.println("Suma de principales: " + suma);
+		System.out.println("Cambio realizado desde GitHub");
 	}
 }
